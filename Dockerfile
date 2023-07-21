@@ -1,4 +1,4 @@
-FROM python:3.8-slim as builder
+FROM python:3.9
 # copy the requirements file into the image
 COPY ./requirments.txt /app/requirments.txt
 
@@ -11,6 +11,6 @@ RUN pip install -r requirments.txt
 # copy every content from the local file to the image
 COPY . /app
 
-EXPOSE 8000
+EXPOSE 80
 
-CMD ["gunicorn", "app:app"]
+CMD ["python3", "app.py"]

@@ -1,0 +1,2 @@
+docker build -t karaoke-frontend .
+docker container run -p 0.0.0.0:80:80 karaoke-frontend
