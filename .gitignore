@@ -1,0 +1,4 @@
+templates/karaoke.html
+templates/fileupload.html
+static/preview.js
+venv/
