@@ -22,19 +22,3 @@ spec:
         env:
         - name: FLASK_ENV
           value: "production"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: karaoke-frontend-service
-  labels:
-    app: karaoke-frontend
-spec:
-  selector:
-    app: karaoke-frontend
-  ports:
-  - name: http
-    protocol: TCP
-    port: 80
-    targetPort: 8080
-  type: LoadBalancer
