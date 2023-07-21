@@ -11,6 +11,6 @@ RUN pip install -r requirments.txt
 # copy every content from the local file to the image
 COPY . /app
 
-EXPOSE 5001
+EXPOSE 8000
 
 CMD ["gunicorn", "app:app"]
