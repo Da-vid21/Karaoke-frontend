@@ -1,4 +1,5 @@
-templates/karaoke.html
-templates/fileupload.html
-static/preview.js
-venv/
+app/templates/karaoke.html
+app/templates/fileupload.html
+app/static/preview.js
+app/venv/
+gcloud

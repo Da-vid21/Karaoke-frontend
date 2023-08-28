@@ -1,2 +1,4 @@
 docker build -t karaoke-frontend .
-docker container run -p 0.0.0.0:80:80 karaoke-frontend
+docker tag karaoke-frontend esubalewdavid/karaoke-frontend
+docker push esubalewdavid/karaoke-frontend
+docker run -p 80:80 karaoke-frontend

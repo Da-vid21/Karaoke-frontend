@@ -24,4 +24,4 @@ def processYT():
     # Render the template
     return render_template("karaoke.html", video_path=video_link, instrumental_path=instrumental_path, vocals_path=vocal_path)
 if __name__ == '__main__':
-    app.run(debug=False, port=80, host='0.0.0.0')
+    app.run(debug=False, port=8000, host='0.0.0.0')
